@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fernando Baptistella | Designer Floral - Araras/SP</title>
+  <meta name="description" content="Há 40 anos transformando casamentos, debutantes e eventos corporativos em cenários dos sonhos. Excelência, bom gosto, beleza e leveza.">
+
+  <!-- Fontes: Roserot e Chopin são as fontes oficiais da marca (arquivos a serem fornecidos pelo cliente via @font-face).
+       Playfair Display e Montserrat são utilizadas como fallback fiel enquanto os arquivos originais não são integrados. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER / NAVEGAÇÃO ============ -->
+  <header class="site-header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo">
+        <img class="logo__mark" src="img/Logotipo.png" alt="Logotipo Fernando Baptistella">
+        Fernando <span>Baptistella</span>
+      </a>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-toggle__label" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#a-marca">A Marca</a></li>
+          <li><a href="#decoracoes">Decorações</a></li>
+          <li><a href="#depoimentos">O que dizem</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- ============ FIM HEADER ============ -->
+
+
+  <!-- ============ SEÇÃO HERO ============ -->
+  <section class="hero" id="inicio">
+    <div class="hero__overlay"></div>
+    <img
+      class="hero__bg"
+      src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2000&auto=format&fit=crop"
+      alt="Decoração floral de luxo para casamento"
+      loading="eager">
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">Designer Floral · Araras/SP · Desde 1984</p>
+      <h1 class="hero__title">Uma decoração dos sonhos deixa o ambiente lindo<br> para o sim perfeito.</h1>
+      <a href="#contato" class="btn btn--outline">Agende uma Consultoria</a>
+    </div>
+
+    <a href="#a-marca" class="hero__scroll" aria-label="Rolar para a próxima seção">
+      <span></span>
+    </a>
+  </section>
+  <!-- ============ FIM HERO ============ -->
+
+
+  <!-- ============ A MARCA (SOBRE NÓS) ============ -->
+  <section class="brand" id="a-marca">
+    <div class="container brand__grid">
+      <div class="brand__image">
+        <img
+          src="img/fotofernando.png"
+          alt="Arranjo floral artesanal em tons de verde e branco"
+          loading="lazy">
+      </div>
+
+      <div class="brand__text">
+        <span class="section-eyebrow">A Marca</span>
+        <h2 class="section-title">40 anos transformando sonhos em memórias eternas</h2>
+        <p>
+          Nossa história começou ainda na década de 1960, quando as primeiras flores foram
+          arranjadas com o único propósito de encantar. Ao longo de décadas, esse cuidado
+          artesanal foi sendo lapidado, geração após geração, até que em 2012 Fernando Baptistella
+          assumiu a condução da marca, unindo a sensibilidade herdada do passado a uma visão
+          contemporânea de alta decoração.
+        </p>
+        <p>
+          Hoje, com quatro décadas de legado, cada projeto nasce da mesma promessa: transformar
+          espaços em cenários únicos, onde a delicadeza das flores encontra a grandiosidade dos
+          momentos mais importantes da vida de nossos clientes.
+        </p>
+
+        <ul class="brand__pillars">
+          <li><span>Excelência</span></li>
+          <li><span>Bom gosto</span></li>
+          <li><span>Beleza</span></li>
+          <li><span>Leveza</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- ============ FIM A MARCA ============ -->
+
+
+  <!-- ============ PORTFÓLIO DE DECORAÇÕES ============ -->
+  <section class="portfolio" id="decoracoes">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-eyebrow">Portfólio</span>
+        <h2 class="section-title">Decorações para cada tipo de sonho</h2>
+      </div>
+
+      <div class="portfolio__grid">
+
+        <article
+          class="portfolio__card portfolio__card--clickable"
+          data-gallery="classicas"
+          role="button"
+          tabindex="0"
+          aria-haspopup="dialog"
+          aria-label="Abrir galeria de Decorações Clássicas">
+          <img
+            src="img/classica/classica-01.jpeg"
+            alt="Decoração clássica de casamento com flores brancas"
+            loading="lazy">
+          <div class="portfolio__caption">
+            <h3>Decorações Clássicas</h3>
+            <p>Elegância atemporal para cerimônias inesquecíveis.</p>
+            <span class="portfolio__card-hint">Ver galeria</span>
+          </div>
+        </article>
+
+        <article
+          class="portfolio__card portfolio__card--clickable"
+          data-gallery="contemporaneas"
+          role="button"
+          tabindex="0"
+          aria-haspopup="dialog"
+          aria-label="Abrir galeria de Decorações Contemporâneas">
+          <img
+            src="img/contemporanea/contemporanea-01.jpeg"
+            alt="Decoração contemporânea de evento com design moderno"
+            loading="lazy">
+          <div class="portfolio__caption">
+            <h3>Decorações Contemporâneas</h3>
+            <p>Design autoral com traços minimalistas e sofisticados.</p>
+            <span class="portfolio__card-hint">Ver galeria</span>
+          </div>
+        </article>
+
+        <article 
+        class="portfolio__card portfolio__card--clickable"
+          data-gallery="debutante"
+          role="button"
+          tabindex="0"
+          aria-haspopup="dialog"
+          aria-label="Abrir galeria de Decorações Debutante">
+          <img
+            src="img/debutante/debutante-01.jpeg"
+            alt="Decoração de festa de debutante em tons pastel"
+            loading="lazy">
+          <div class="portfolio__caption">
+            <h3>Decorações de Debutantes</h3>
+            <p>Cenários encantados para o dia dos 15 anos.</p>
+            <span class="portfolio__card-hint">Ver galeria</span>
+          </div>
+        </article>
+
+        <article 
+         class="portfolio__card portfolio__card--clickable"
+          data-gallery="corporativas"
+          role="button"
+          tabindex="0"
+          aria-haspopup="dialog"
+          aria-label="Abrir galeria de Decorações Corporativas">
+          <img
+            src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=900&auto=format&fit=crop"
+            alt="Decoração corporativa elegante para eventos empresariais"
+            loading="lazy">
+          <div class="portfolio__caption">
+            <h3>Decorações Corporativas</h3>
+            <p>Sofisticação floral para eventos institucionais.</p>
+              <span class="portfolio__card-hint">Ver galeria</span>
+          </div>
+        </article>
+
+        <article 
+         class="portfolio__card portfolio__card--clickable"
+          data-gallery="formatura"
+          role="button"
+          tabindex="0"
+          aria-haspopup="dialog"
+          aria-label="Abrir galeria de Decorações Formatura">
+          <img
+            src="img/formatura/formatura-01.jpeg"
+            alt="Decoração de formatura com arranjos florais elegantes"
+            loading="lazy">
+          <div class="portfolio__caption">
+            <h3>Formaturas</h3>
+            <p>Celebrando conquistas com beleza e leveza.</p>
+            <span class="portfolio__card-hint">Ver galeria</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+  <!-- ============ FIM PORTFÓLIO ============ -->
+
+
+  <!-- ============ DEPOIMENTOS ============ -->
+  <section class="testimonials" id="depoimentos">
+    <div class="container testimonials__inner">
+      <span class="section-eyebrow section-eyebrow--light">O que dizem</span>
+
+      <div class="testimonial-carousel" id="testimonialCarousel">
+        <div class="testimonial-carousel__viewport">
+          <ul class="testimonial-carousel__track" id="testimonialTrack">
+
+           
+
+            <li class="testimonial-carousel__slide">
+              <blockquote class="testimonial">
+                <p>
+                  &ldquo;Sensacional seu trabalho! Simplesmente impecável, não tinha uma única coisa fora do lugar.
+                  Nada sobrando, nada faltando, tudo exatamente como tínhamos em mente.
+                  Você foi justo e honesto desde o início, com toda educação e clareza!
+                  Que Deus honre o trabalho de vocês, permitindo que façam mais milhares de dias serem únicos!&rdquo;
+                </p>
+                <footer>
+                  <cite>Alex Cerpe</cite>
+                  <span class="testimonial__date">03 de agosto de 2023</span>
+                </footer>
+              </blockquote>
+            </li>
+
+            <li class="testimonial-carousel__slide">
+              <blockquote class="testimonial">
+                <p>
+                  &ldquo;Agora conseguimos parar um pouquinho e agradecer a todos que fizeram parte desse dia tão especial para nós.
+                  Obrigada por toda atenção e cuidado, por se preocuparem com cada detalhe e se esforçarem para tornar real o que um dia foi um sonho.
+                  Nem nos meus melhores sonhos eu imaginava uma decoração como aquela.
+                  Sobre o buquê, só posso dizer que estava maravilhoso, muito melhor do que a inspiração!&rdquo;
+                </p>
+                <footer>
+                  <cite>Ju Maia</cite>
+                  <span class="testimonial__date">16 de setembro de 2024</span>
+                </footer>
+              </blockquote>
+            </li>
+
+            <li class="testimonial-carousel__slide">
+              <blockquote class="testimonial">
+                <p>
+                  &ldquo;Nada que eu diga é capaz de agradecer a você, Fernando, pela decoração impecável,
+                  muito melhor que nos meus sonhos, e ao René por estes registros maravilhosos.
+                  Obrigada por tudo!&rdquo;
+                </p>
+                <footer>
+                  <cite>Dalva Bertho</cite>
+                  <span class="testimonial__date">29 de novembro de 2022</span>
+                </footer>
+              </blockquote>
+            </li>
+
+            <li class="testimonial-carousel__slide">
+              <blockquote class="testimonial">
+                <p>
+                  &ldquo;Estou passando para lhe agradecer por tudo que fez por nós no aniversário de 15 anos da Mirieli.
+                  Estava tudo tão lindo, tão perfeito, tão incrível.
+                  Vocês pensaram em todos os detalhes e fizeram do nosso sonho uma realidade surreal.
+                  Parecia coisa de filme mesmo. Vocês arrasaram!&rdquo;
+                </p>
+                <footer>
+                  <cite>Família Mirieli</cite>
+                  <span class="testimonial__date">2026</span>
+                </footer>
+              </blockquote>
+            </li>
+
+            <li class="testimonial-carousel__slide">
+              <blockquote class="testimonial">
+                <p>
+                  &ldquo;Agradecemos imensamente, Fernando, pelo excelente trabalho.
+                  A decoração estava impecável e foi muito elogiada por todos os presentes.
+                  Que Deus continue abençoando esse dom tão especial que você e sua esposa possuem.
+                  Vocês superaram todas as nossas expectativas e contribuíram de forma inesquecível para esse momento tão especial em nossas vidas.&rdquo;
+                </p>
+                <footer>
+                  <cite>Murilo &amp; Joice</cite>
+                  <span class="testimonial__date">Depoimento Especial</span>
+                </footer>
+              </blockquote>
+            </li>
+
+            <li class="testimonial-carousel__slide">
+              <blockquote class="testimonial">
+                <p>
+                  &ldquo;Só temos a agradecer.
+                  Foi tudo tão lindo, mágico.
+                  Você e a Camila transformaram tudo em um verdadeiro conto de fadas.
+                  Que Deus abençoe vocês e que tenham muito sucesso.
+                  Ainda estou vivendo esse momento lindo na memória.&rdquo;
+                </p>
+                <footer>
+                  <cite>Tavane Anselmo</cite>
+                  <span class="testimonial__date">Depoimento Especial</span>
+                </footer>
+              </blockquote>
+            </li>
+
+            <li class="testimonial-carousel__slide">
+              <blockquote class="testimonial">
+                <p>
+                  &ldquo;Fernando, se eu tivesse o poder de oferecer qualquer coisa para você,
+                  certamente ofereceria um pedacinho de eternidade para que outras noivas,
+                  assim como eu, pudessem sentir a alegria, a emoção e o amor que é ter você como decorador.
+                  Você foi nossa melhor escolha. Não tenho palavras para agradecer tanto talento, cuidado e dedicação.&rdquo;
+                </p>
+                <footer>
+                  <cite>Daiane Lima Araújo</cite>
+                  <span class="testimonial__date">10 de setembro de 2022</span>
+                </footer>
+              </blockquote>
+            </li>
+
+            <li class="testimonial-carousel__slide">
+              <blockquote class="testimonial">
+                <p>
+                  &ldquo;Não tenho nem palavras para agradecer por tudo que vocês fizeram.
+                  Com toda certeza ficou tudo maravilhoso e ainda melhor do que a gente sonhou.
+                  Parabéns por toda sua responsabilidade, capricho e profissionalismo.
+                  Nós amamos cada detalhe da decoração.
+                  Foi tudo perfeito!&rdquo;
+                </p>
+                <footer>
+                  <cite>Cliente Especial</cite>
+                  <span class="testimonial__date">04 de setembro de 2023</span>
+                </footer>
+              </blockquote>
+            </li>
+
+            <li class="testimonial-carousel__slide">
+              <blockquote class="testimonial">
+                <p>
+                  &ldquo;Quero deixar aqui a minha gratidão por vocês.
+                  Vocês são anjos, transformadores de sonhos.
+                  Ver a minha festa pronta foi muito mais do que imaginei.
+                  Que atenção, que delicadeza, que trabalho perfeito!
+                  Muito obrigada de coração!&rdquo;
+                </p>
+                <footer>
+                  <cite>Maju Malimpensa</cite>
+                  <span class="testimonial__date">Depoimento Especial</span>
+                </footer>
+              </blockquote>
+            </li>
+
+            <li class="testimonial-carousel__slide">
+              <blockquote class="testimonial">
+                <p>
+                  &ldquo;Sem palavras para agradecer vocês.
+                  Foi muito além do que imaginávamos.
+                  Vocês são os melhores.
+                  Obrigada por cada detalhe, foi um encanto.
+                  Meu buquê estava surreal.
+                  Somente gratidão por terem estado ao nosso lado nesse momento tão especial.&rdquo;
+                </p>
+                <footer>
+                  <cite>Cliente Especial</cite>
+                  <span class="testimonial__date">09 de setembro de 2024</span>
+                </footer>
+              </blockquote>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="testimonial-carousel__controls">
+          <button class="testimonial-carousel__btn testimonial-carousel__btn--prev" type="button" aria-label="Depoimento anterior">&#8249;</button>
+          <div class="testimonial-carousel__dots" id="testimonialDots"></div>
+          <button class="testimonial-carousel__btn testimonial-carousel__btn--next" type="button" aria-label="Próximo depoimento">&#8250;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ============ FIM DEPOIMENTOS ============ -->
+
+
+  <!-- ============ RODAPÉ / CONTATO ============ -->
+  <footer class="site-footer" id="contato">
+    <div class="container footer__grid">
+
+      <div class="footer__col">
+        <a href="#inicio" class="logo logo--footer">
+          <img class="logo__mark" src="img/Logotipo-transparente.png" alt="Logotipo Fernando Baptistella">
+          Fernando <span>Baptistella</span>
+        </a>
+        <p>Designer Floral · Araras/SP</p>
+        <p>40 anos transformando ambientes em cenários dos sonhos.</p>
+      </div>
+
+      <div class="footer__col">
+        <h3>Contato</h3>
+        <p>Araras, São Paulo — Brasil</p>
+        <p><a href="mailto:contato@fernandobaptistella.com.br">contato@fernandobaptistella.com.br</a></p>
+        <a
+          class="btn btn--whatsapp"
+          href="https://wa.me/5519998851723?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20decoração."
+          target="_blank"
+          rel="noopener noreferrer">
+          <svg class="btn--whatsapp__icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path fill="currentColor" d="M12.004 2.003c-5.514 0-9.997 4.483-9.997 9.997 0 1.763.464 3.484 1.345 4.997L2 22l5.144-1.34a9.96 9.96 0 0 0 4.86 1.238h.004c5.514 0 9.997-4.483 9.997-9.997 0-2.671-1.04-5.182-2.929-7.071a9.93 9.93 0 0 0-7.072-2.827zm0 18.174h-.003a8.17 8.17 0 0 1-4.163-1.14l-.299-.177-3.053.795.815-2.977-.194-.306a8.18 8.18 0 0 1-1.257-4.372c0-4.518 3.677-8.194 8.196-8.194a8.14 8.14 0 0 1 5.797 2.402 8.14 8.14 0 0 1 2.398 5.796c0 4.519-3.678 8.173-8.237 8.173z"/>
+          </svg>
+          Fale pelo WhatsApp
+        </a>
+      </div>
+
+      <div class="footer__col">
+        <h3>Redes Sociais</h3>
+        <ul class="social-list">
+          <li>
+            <a
+              href="https://www.instagram.com/fernandobaptistella_decorador?utm_source=qr&amp;igsh=MTl6cTkzaHdxczhvaw=="
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-list__link">
+              <svg class="social-list__icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.256 1.216.6 1.772 1.153a4.9 4.9 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.05 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.9 4.9 0 0 1-1.153 1.772 4.9 4.9 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.05-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.9 4.9 0 0 1-1.772-1.153 4.9 4.9 0 0 1-1.153-1.772c-.247-.637-.415-1.363-.465-2.428C2.01 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.065.218-1.79.465-2.428A4.9 4.9 0 0 1 3.678 3.678 4.9 4.9 0 0 1 5.45 2.525c.637-.247 1.363-.415 2.428-.465C8.944 2.01 9.283 2 12 2zm0 1.802c-2.67 0-2.986.01-4.04.059-.976.045-1.505.207-1.858.344-.467.182-.8.399-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.858-.05 1.054-.06 1.37-.06 4.04 0 2.67.01 2.986.06 4.04.045.976.207 1.505.344 1.858.182.467.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.858.344 1.054.05 1.37.06 4.04.06 2.67 0 2.986-.01 4.04-.06.976-.045 1.505-.207 1.858-.344.467-.182.8-.399 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.858.05-1.054.06-1.37.06-4.04 0-2.67-.01-2.986-.06-4.04-.045-.976-.207-1.505-.344-1.858a3.09 3.09 0 0 0-.748-1.15 3.09 3.09 0 0 0-1.15-.748c-.353-.137-.882-.3-1.858-.344-1.054-.05-1.37-.059-4.04-.059zm0 3.064a5.134 5.134 0 1 1 0 10.268 5.134 5.134 0 0 1 0-10.268zm0 1.802a3.332 3.332 0 1 0 0 6.664 3.332 3.332 0 0 0 0-6.664zm5.338-1.995a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/>
+              </svg>
+              <span>Instagram</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/share/1ATTsP74gK/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-list__link">
+              <svg class="social-list__icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M13.5 22v-8.5h2.85l.43-3.31H13.5V8.05c0-.96.27-1.61 1.64-1.61h1.75V3.49C16.56 3.44 15.55 3.35 14.37 3.35c-2.46 0-4.15 1.5-4.15 4.26v2.58H7.36v3.31h2.86V22h3.28z"/>
+              </svg>
+              <span>Facebook</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3>Fale Conosco</h3>
+        <form class="contact-form" action="#" method="post">
+          <input type="text" name="nome" placeholder="Seu nome" required>
+          <input type="email" name="email" placeholder="Seu e-mail" required>
+          <textarea name="mensagem" placeholder="Conte-nos sobre o seu evento" rows="3" required></textarea>
+          <button type="submit" class="btn btn--solid">Enviar mensagem</button>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2026 Fernando Baptistella Designer Floral. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <!-- ============ FIM RODAPÉ ============ -->
+
+
+  <!-- ============ GALERIA (LIGHTBOX) ============ -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox__overlay" data-lightbox-close></div>
+    <div class="lightbox__dialog" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+      <button class="lightbox__close" type="button" data-lightbox-close aria-label="Fechar galeria">&times;</button>
+      <h3 class="lightbox__title" id="lightbox-title"></h3>
+      <div class="lightbox__grid" id="lightbox-grid"></div>
+    </div>
+  </div>
+  <!-- ============ FIM GALERIA ============ -->
+
+  <script src="script.js" defer></script>
+</body>
+</html>
