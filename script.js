@@ -1,3 +1,16 @@
+// ============ MENU MOBILE ============
+(function () {
+  var menuToggle = document.getElementById("menu-toggle");
+  if (!menuToggle) return;
+
+  document.querySelectorAll(".nav__list a").forEach(function (link) {
+    link.addEventListener("click", function () {
+      menuToggle.checked = false;
+    });
+  });
+})();
+
+
 // ============ GALERIA DE FOTOS (LIGHTBOX) ============
 (function () {
   var galleries = {
