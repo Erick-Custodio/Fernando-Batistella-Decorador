@@ -31,6 +31,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -39,6 +40,7 @@ body {
   background-color: var(--color-white);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 img {
@@ -59,7 +61,7 @@ ul {
   width: 100%;
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 clamp(18px, 4vw, 32px);
 }
 
 .section-eyebrow {
@@ -105,6 +107,9 @@ ul {
   border-radius: 2px;
   cursor: pointer;
   transition: var(--transition-base);
+  max-width: 100%;
+  text-align: center;
+  white-space: normal;
 }
 
 .btn--outline {
@@ -174,6 +179,7 @@ ul {
   justify-content: space-between;
   padding-top: 18px;
   padding-bottom: 18px;
+  gap: 18px;
 }
 
 .logo {
@@ -185,6 +191,8 @@ ul {
   font-weight: 500;
   letter-spacing: 0.5px;
   color: var(--color-graphite);
+  min-width: 0;
+  flex-shrink: 1;
 }
 
 .logo__mark {
@@ -199,7 +207,7 @@ ul {
 
 .nav__list {
   display: flex;
-  gap: 40px;
+  gap: clamp(18px, 3vw, 40px);
 }
 
 .nav__list a {
@@ -259,8 +267,8 @@ ul {
 
 .hero {
   position: relative;
-  height: 100vh;
   min-height: 560px;
+  min-height: max(560px, 100svh);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -293,7 +301,7 @@ ul {
   z-index: 2;
   text-align: center;
   color: var(--color-white);
-  padding: 0 24px;
+  padding: 96px clamp(18px, 5vw, 32px) 72px;
   max-width: 900px;
 }
 
@@ -349,14 +357,14 @@ ul {
    ========================================================================== */
 
 .brand {
-  padding: 120px 0;
+  padding: clamp(72px, 10vw, 120px) 0;
   background: var(--color-white);
 }
 
 .brand__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(42px, 7vw, 80px);
   align-items: center;
 }
 
@@ -405,14 +413,14 @@ ul {
    ========================================================================== */
 
 .portfolio {
-  padding: 120px 0;
+  padding: clamp(72px, 10vw, 120px) 0;
   background: var(--color-sage-light);
 }
 
 .portfolio__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(20px, 3vw, 32px);
 }
 
 .portfolio__card {
@@ -436,7 +444,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 28px;
+  padding: clamp(20px, 3vw, 28px);
   background: linear-gradient(
     180deg,
     rgba(31, 31, 31, 0) 40%,
@@ -448,7 +456,7 @@ ul {
 .portfolio__caption h3 {
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: clamp(1.08rem, 2vw, 1.3rem);
   margin-bottom: 6px;
   transition: var(--transition-base);
 }
@@ -517,7 +525,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: clamp(12px, 3vw, 24px);
   opacity: 0;
   visibility: hidden;
   transition: var(--transition-base);
@@ -539,7 +547,8 @@ ul {
   z-index: 1;
   width: 100%;
   max-width: 960px;
-  max-height: 88vh;
+  max-height: min(88vh, 900px);
+  max-height: min(88svh, 900px);
   overflow-y: auto;
   background: var(--color-white);
   border-radius: 4px;
@@ -582,7 +591,7 @@ ul {
 
 .lightbox__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
 }
 
@@ -606,7 +615,7 @@ ul {
    ========================================================================== */
 
 .testimonials {
-  padding: 120px 0;
+  padding: clamp(72px, 10vw, 120px) 0;
   background: var(--color-graphite);
   text-align: center;
 }
@@ -667,7 +676,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: clamp(12px, 4vw, 24px);
   margin-top: 32px;
 }
 
@@ -724,13 +733,13 @@ ul {
 .site-footer {
   background: var(--color-sage);
   color: var(--color-white);
-  padding: 100px 0 0;
+  padding: clamp(64px, 8vw, 100px) 0 0;
 }
 
 .footer__grid {
   display: grid;
   grid-template-columns: 1.2fr 1fr 1fr 1.4fr;
-  gap: 48px;
+  gap: clamp(32px, 4vw, 48px);
   padding-bottom: 64px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
@@ -753,6 +762,11 @@ ul {
 
 .footer__col a:hover {
   color: var(--color-sage-light);
+}
+
+.footer__col a,
+.footer__col p {
+  overflow-wrap: anywhere;
 }
 
 .logo--footer {
@@ -805,6 +819,8 @@ ul {
   color: var(--color-white);
   resize: none;
   transition: var(--transition-base);
+  width: 100%;
+  min-width: 0;
 }
 
 .contact-form input::placeholder,
@@ -855,17 +871,35 @@ ul {
 }
 
 @media (max-width: 768px) {
+  .header__inner {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .logo__mark {
+    width: 36px;
+    height: 36px;
+  }
+
   .menu-toggle__label {
     display: flex;
+    flex: 0 0 auto;
   }
 
   .nav {
     position: fixed;
     inset: 0;
+    min-height: 100vh;
+    min-height: 100svh;
     background: var(--color-white);
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 88px 24px 40px;
     transform: translateX(100%);
     transition: transform 0.4s ease;
     z-index: 105;
@@ -897,22 +931,60 @@ ul {
     transform: translateY(-7px) rotate(-45deg);
   }
 
-  .brand,
-  .portfolio,
-  .testimonials {
-    padding: 80px 0;
+  .hero {
+    min-height: 620px;
+    min-height: max(620px, 100svh);
+    align-items: flex-end;
+  }
+
+  .hero__bg {
+    object-position: center top;
+  }
+
+  .hero__content {
+    padding-top: 120px;
+    padding-bottom: 112px;
+  }
+
+  .hero__title br {
+    display: none;
+  }
+
+  .hero__eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+  }
+
+  .section-heading {
+    margin-bottom: 36px;
   }
 
   .portfolio__grid {
     grid-template-columns: 1fr;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .portfolio__card {
+    aspect-ratio: 4 / 5;
+  }
+
+  .portfolio__caption p,
+  .portfolio__card-hint {
+    opacity: 1;
+    transform: none;
   }
 
   .lightbox__grid {
     grid-template-columns: 1fr 1fr;
+    gap: 12px;
   }
 
   .lightbox__dialog {
     padding: 48px 20px 24px;
+    max-height: 92vh;
+    max-height: 92svh;
   }
 
   .footer__grid {
@@ -928,15 +1000,115 @@ ul {
 
 @media (max-width: 480px) {
   .container {
-    padding: 0 18px;
+    padding: 0 16px;
+  }
+
+  .header__inner {
+    gap: 12px;
+  }
+
+  .logo {
+    gap: 8px;
+    font-size: 1.02rem;
+    line-height: 1.1;
+  }
+
+  .logo__mark {
+    width: 32px;
+    height: 32px;
+  }
+
+  .hero {
+    min-height: 560px;
+    min-height: max(560px, 100svh);
+  }
+
+  .hero__content {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 96px;
   }
 
   .hero__title {
     line-height: 1.4;
+    margin-bottom: 28px;
   }
 
   .btn {
-    padding: 14px 28px;
-    font-size: 0.8rem;
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 0.76rem;
+    letter-spacing: 1px;
+  }
+
+  .brand__pillars {
+    gap: 10px;
+  }
+
+  .brand__pillars li {
+    flex: 1 1 140px;
+  }
+
+  .brand__pillars li span {
+    width: 100%;
+    text-align: center;
+    padding: 10px 14px;
+    letter-spacing: 0.7px;
+  }
+
+  .portfolio__caption {
+    background: linear-gradient(
+      180deg,
+      rgba(31, 31, 31, 0.08) 20%,
+      rgba(31, 31, 31, 0.9) 100%
+    );
+  }
+
+  .lightbox__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lightbox__title {
+    font-size: 1.35rem;
+    margin-bottom: 22px;
+  }
+
+  .testimonial p {
+    font-size: 1.08rem;
+  }
+
+  .testimonial-carousel__controls {
+    align-items: flex-start;
+  }
+
+  .testimonial-carousel__dots {
+    max-width: 150px;
+  }
+
+  .footer__bottom {
+    padding: 20px 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo {
+    font-size: 0.92rem;
+  }
+
+  .hero__eyebrow {
+    font-size: 0.68rem;
+    letter-spacing: 1.4px;
+  }
+
+  .hero__title {
+    font-size: 1.72rem;
+  }
+
+  .section-title {
+    font-size: 1.55rem;
+  }
+
+  .portfolio__caption {
+    padding: 18px;
   }
 }
