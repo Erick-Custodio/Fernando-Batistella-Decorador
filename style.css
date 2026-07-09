@@ -604,6 +604,10 @@ ul {
   transition: var(--transition-base);
 }
 
+.lightbox__grid img[src$="contemporanea-13.jpeg"] {
+  object-position: center 18%;
+}
+
 .lightbox__grid img:hover {
   transform: scale(1.04);
   box-shadow: 0 8px 24px rgba(31, 31, 31, 0.25);
